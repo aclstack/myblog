@@ -24,8 +24,7 @@ def edit_action(request):
     title = request.POST.get('title', 'TITLE')
     content = request.POST.get('content', 'CONTENT')
     article_id = request.POST.get('article_id', '0')
-    print(type(article_id))
-    print(article_id)
+
 
     if article_id == '0':
         models.Article.objects.create(title=title, content=content)
