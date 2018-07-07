@@ -2,10 +2,12 @@
 ```
 安装Django
 pip install django==1.10.2
-初始化数据库
+初始化数据库，默认已经初始化完毕，除非迁移新数据库类型
 python manage.py makemigrations
 python manage.py migrate
-
+默认后台账号密码
+admin
+123456qwe
 ```
 
 ### 彩蛋
